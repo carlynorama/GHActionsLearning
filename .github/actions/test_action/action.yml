@@ -3,7 +3,6 @@ name: Example External Script
 
 runs:
   using: "composite"
-  steps:
     steps:
       - name: Message
         run: echo "Nya-ha-ha! You Found Me!"
