@@ -2,8 +2,8 @@
 name: Example External Script
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
-    steps:
-      - name: Output Github context
-        run: echo "Nya-ha-ha! You Found Me!"
+    - name: Message
+      run: echo "Nya-ha-ha! You Found Me!"
+      shell: "bash"
