@@ -16,6 +16,6 @@ jobs:
         pwd
     - name: Run python setup
       # Use the location in the repository (without action.yml)
-      uses: carlynorama/GHActionsForOpenUSD/actions/python_cached_setup/@main
+      uses: ./.github/actions/python_cached_setup/@default-build-test
     - name: Test Python setup
       run: pip freeze
