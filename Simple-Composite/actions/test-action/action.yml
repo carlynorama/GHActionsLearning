@@ -6,4 +6,4 @@ runs:
   steps:
     steps:
       - name: Output Github context
-        run: echo "Hello! You Found Me!"
+        run: echo "Nya-ha-ha! You Found Me!"
