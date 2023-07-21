@@ -1,0 +1,14 @@
+# https://wallis.dev/blog/composite-github-actions
+name: Use External Resources
+
+on: [push]
+
+jobs:
+  run-local-action:
+    steps:
+      # Checkout the repository first
+      # Otherwise the workflow won't be able to find the action
+    - use: actions/checkout@v3
+    - name: Run custom action
+      # Use the location in the repository (without action.yml)
+      uses: ./.github/actions/example-action 
