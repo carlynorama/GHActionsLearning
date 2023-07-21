@@ -16,4 +16,4 @@ jobs:
         pwd
     - name: Run custom action
       # Use the location in the repository (without action.yml)
-      uses: ./.github/actions/test-action
+      uses: ./.github/actions/test_action
