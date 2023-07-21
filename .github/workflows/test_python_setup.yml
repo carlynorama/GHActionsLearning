@@ -1,5 +1,5 @@
 # https://wallis.dev/blog/composite-github-actions
-name: Use External Resources
+name: Python Setup
 
 on: [push]
 
@@ -16,6 +16,6 @@ jobs:
         pwd
     - name: Run python setup
       # Use the location in the repository (without action.yml)
-      uses: carlynorama/GHActionsForOpenUSD/actions/python_cached_setup/
+      uses: carlynorama/GHActionsForOpenUSD/actions/python_cached_setup/@main
     - name: Test Python setup
       run: pip freeze
