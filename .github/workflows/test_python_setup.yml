@@ -1,0 +1,21 @@
+# https://wallis.dev/blog/composite-github-actions
+name: Use External Resources
+
+on: [push]
+
+jobs:
+  run-local-action:
+    runs-on: ubuntu-latest
+    steps:
+      # Otherwise the workflow won't be able to find the action
+    - name: Checkout This Repo
+      uses: actions/checkout@v3
+    - name: Where am I?
+      run: |
+        ls -a
+        pwd
+    - name: Run python setup
+      # Use the location in the repository (without action.yml)
+      uses: carlynorama/GHActionsForOpenUSD/actions/python_cached_setup/
+    - name: Test Python setup
+      run: pip freeze
