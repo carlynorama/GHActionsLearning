@@ -1,4 +1,6 @@
 # https://wallis.dev/blog/composite-github-actions
+#https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+
 name: Use External Resources
 
 on: [push]
@@ -16,4 +18,4 @@ jobs:
         pwd
     - name: Run custom action
       # Use the location in the repository (without action.yml)
-      uses: ./actions/test-action
+      uses: actions/test-action
