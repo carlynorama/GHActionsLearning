@@ -1,9 +1,0 @@
-
-name: Example External Script
-on: workflow_dispatch
-jobs:
-  info:
-    runs-on: composite
-    steps:
-      - name: Output Github context
-        run: echo "Hello! You Found Me!"
