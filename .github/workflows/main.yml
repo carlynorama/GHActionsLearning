@@ -10,6 +10,10 @@ jobs:
       # Otherwise the workflow won't be able to find the action
     - name: Checkout This Repo
       uses: actions/checkout@v3
+    - name: Where am I?
+      run: |
+        ls -a
+        pwd
     - name: Run custom action
       # Use the location in the repository (without action.yml)
-      uses: .github/actions/example-action.yml
+      uses: ./.github/actions/example-action.yml
