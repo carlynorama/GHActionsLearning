@@ -1,4 +1,11 @@
-# https://wallis.dev/blog/composite-github-actions
+##
+## GitHub Actions File
+## https://github.com/carlynorama/GHActionsLearning
+##
+## ~/Developer/GitHub/GHActionsLearning/PythonSetUp/workflows/test_python_setup.yml
+## Carlyn Maw 2023 Jul 21
+##
+
 name: Python Setup
 
 on: [push]
